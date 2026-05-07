@@ -2,6 +2,7 @@
 #include <SFML/Graphics.hpp>
 #include <unordered_map>
 #include <functional>
+#include "StateManager.hpp"
 
 enum class EventType {
 	KeyDown = sf::Event::KeyPressed,
@@ -69,7 +70,9 @@ struct Binding {
 
 using Bindings = std::unordered_map<std::string, Binding*>;
 
-using Callbacks = std::unordered_map<std::string, std::function<void(EventDetails*)>>;
+using CallbackContainer = std::unordered_map<std::string, std::function<void(EventDetails*)>>;
+enum class StateType;
+using Callbacks = std::unordered_map<StateType, CallbackContainer>;
 
 class EventManager {
 public:
@@ -83,16 +86,22 @@ public:
 	
 	// Needs to be defined in the header!
 	template<class T>
-	bool AddCallback(const std::string& l_name,
+	bool AddCallback(StateType l_state, const std::string& l_name,
 		void(T::* l_func)(EventDetails*), T* l_instance)
 	{
+		auto itr = m_callbacks.emplace(l_state, CallbackContainer()).first;
 		auto temp = std::bind(l_func, l_instance,
 			std::placeholders::_1);
-		return m_callbacks.emplace(l_name, temp).second;
+		return itr->second.emplace(l_name, temp).second;
 	}
 
-	void RemoveCallback(const std::string& l_name) {
-		m_callbacks.erase(l_name);
+	bool RemoveCallback(StateType l_state, const std::string& l_name) {
+		auto itr = m_callbacks.find(l_state);
+		if (itr == m_callbacks.end()) { return false; }
+		auto itr2 = itr->second.find(l_name);
+		if (itr2 == itr->second.end()) { return false; }
+		itr->second.erase(l_name);
+		return true;
 	}
 
 	void HandleEvent(sf::Event& l_event);
@@ -107,5 +116,6 @@ private:
 	void LoadBindings();
 	Bindings m_bindings;
 	Callbacks m_callbacks;
+	StateType m_currentState;
 	bool m_hasFocus;
 };
