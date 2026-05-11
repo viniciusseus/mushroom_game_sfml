@@ -1,3 +1,325 @@
 ﻿C:\Program Files\Microsoft Visual Studio\18\Community\MSBuild\Microsoft\VC\v180\Microsoft.CppBuild.targets(551,5): warning MSB8028: O diretório intermediário (x64\Debug\) contém arquivos compartilhados de outro projeto (Worm.vcxproj). Isso pode levar a um comportamento incorreto de limpeza e recompilação.
+  EventManager.cpp
+C:\Users\vinicius.seus\source\repos\Worm\Worm\Window.hpp(20,25): error C2061: erro de sintaxe: identificador 'EventDetails'
+  (compilando o arquivo fonte 'EventManager.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\Window.hpp(21,14): error C2061: erro de sintaxe: identificador 'EventDetails'
+  (compilando o arquivo fonte 'EventManager.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\Window.hpp(22,15): error C2143: erro de sintaxe: ';' ausente antes de '*'
+  (compilando o arquivo fonte 'EventManager.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\Window.hpp(22,3): error C4430: faltando especificador de tipo - int assumido. Observação: C++ não suporta default-int
+  (compilando o arquivo fonte 'EventManager.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\Window.hpp(22,34): error C2238: token(s) inesperado(s) precedendo ';'
+  (compilando o arquivo fonte 'EventManager.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\Window.hpp(34,16): error C3646: 'm_eventManager': especificador de substituição desconhecido
+  (compilando o arquivo fonte 'EventManager.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\Window.hpp(34,3): error C4430: faltando especificador de tipo - int assumido. Observação: C++ não suporta default-int
+  (compilando o arquivo fonte 'EventManager.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(28,14): error C2143: erro de sintaxe: ';' ausente antes de '*'
+  (compilando o arquivo fonte 'EventManager.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(28,2): error C4430: faltando especificador de tipo - int assumido. Observação: C++ não suporta default-int
+  (compilando o arquivo fonte 'EventManager.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(28,30): error C2238: token(s) inesperado(s) precedendo ';'
+  (compilando o arquivo fonte 'EventManager.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(26,36): error C2614: 'SharedContext': inicialização de membro inválida: 'm_eventManager' não é uma base ou membro
+  (compilando o arquivo fonte 'EventManager.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\EventManager.cpp(166,12): warning C4267: 'inicializando': conversão de 'size_t' para 'int', possível perda de dados
+  Game.cpp
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(27,8): error C2143: erro de sintaxe: ';' ausente antes de '*'
+  (compilando o arquivo fonte 'Game.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(27,2): error C4430: faltando especificador de tipo - int assumido. Observação: C++ não suporta default-int
+  (compilando o arquivo fonte 'Game.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(27,16): error C2238: token(s) inesperado(s) precedendo ';'
+  (compilando o arquivo fonte 'Game.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(28,14): error C2143: erro de sintaxe: ';' ausente antes de '*'
+  (compilando o arquivo fonte 'Game.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(28,2): error C4430: faltando especificador de tipo - int assumido. Observação: C++ não suporta default-int
+  (compilando o arquivo fonte 'Game.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(28,30): error C2238: token(s) inesperado(s) precedendo ';'
+  (compilando o arquivo fonte 'Game.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(26,19): error C2614: 'SharedContext': inicialização de membro inválida: 'm_wind' não é uma base ou membro
+  (compilando o arquivo fonte 'Game.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(26,36): error C2614: 'SharedContext': inicialização de membro inválida: 'm_eventManager' não é uma base ou membro
+  (compilando o arquivo fonte 'Game.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\Game.cpp(14,12): error C2039: ' m_wind': não é um membro de 'SharedContext'
+      C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(25,8):
+      consulte a declaração de 'SharedContext'
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\Game.cpp(15,12): error C2039: ' m_eventManager': não é um membro de 'SharedContext'
+      C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(25,8):
+      consulte a declaração de 'SharedContext'
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\Game.cpp(66,45): warning C4244: 'argumento': conversão de 'T' para 'float', possível perda de dados
+C:\Users\vinicius.seus\source\repos\Worm\Worm\Game.cpp(66,45): warning C4244:         with
+C:\Users\vinicius.seus\source\repos\Worm\Worm\Game.cpp(66,45): warning C4244:         [
+C:\Users\vinicius.seus\source\repos\Worm\Worm\Game.cpp(66,45): warning C4244:             T=int
+C:\Users\vinicius.seus\source\repos\Worm\Worm\Game.cpp(66,45): warning C4244:         ]
+C:\Users\vinicius.seus\source\repos\Worm\Worm\Game.cpp(66,33): warning C4244: 'argumento': conversão de 'T' para 'float', possível perda de dados
+C:\Users\vinicius.seus\source\repos\Worm\Worm\Game.cpp(66,33): warning C4244:         with
+C:\Users\vinicius.seus\source\repos\Worm\Worm\Game.cpp(66,33): warning C4244:         [
+C:\Users\vinicius.seus\source\repos\Worm\Worm\Game.cpp(66,33): warning C4244:             T=int
+C:\Users\vinicius.seus\source\repos\Worm\Worm\Game.cpp(66,33): warning C4244:         ]
   main.cpp
-  Worm.vcxproj -> C:\Users\vinicius.seus\source\repos\Worm\x64\Debug\Mushroom.exe
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(27,8): error C2143: erro de sintaxe: ';' ausente antes de '*'
+  (compilando o arquivo fonte 'main.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(27,2): error C4430: faltando especificador de tipo - int assumido. Observação: C++ não suporta default-int
+  (compilando o arquivo fonte 'main.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(27,16): error C2238: token(s) inesperado(s) precedendo ';'
+  (compilando o arquivo fonte 'main.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(28,14): error C2143: erro de sintaxe: ';' ausente antes de '*'
+  (compilando o arquivo fonte 'main.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(28,2): error C4430: faltando especificador de tipo - int assumido. Observação: C++ não suporta default-int
+  (compilando o arquivo fonte 'main.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(28,30): error C2238: token(s) inesperado(s) precedendo ';'
+  (compilando o arquivo fonte 'main.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(26,19): error C2614: 'SharedContext': inicialização de membro inválida: 'm_wind' não é uma base ou membro
+  (compilando o arquivo fonte 'main.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(26,36): error C2614: 'SharedContext': inicialização de membro inválida: 'm_eventManager' não é uma base ou membro
+  (compilando o arquivo fonte 'main.cpp')
+  
+  State_Intro.cpp
+C:\Users\vinicius.seus\source\repos\Worm\Worm\Window.hpp(20,25): error C2061: erro de sintaxe: identificador 'EventDetails'
+  (compilando o arquivo fonte 'State_Intro.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\Window.hpp(21,14): error C2061: erro de sintaxe: identificador 'EventDetails'
+  (compilando o arquivo fonte 'State_Intro.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\Window.hpp(22,15): error C2143: erro de sintaxe: ';' ausente antes de '*'
+  (compilando o arquivo fonte 'State_Intro.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\Window.hpp(22,3): error C4430: faltando especificador de tipo - int assumido. Observação: C++ não suporta default-int
+  (compilando o arquivo fonte 'State_Intro.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\Window.hpp(22,34): error C2238: token(s) inesperado(s) precedendo ';'
+  (compilando o arquivo fonte 'State_Intro.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\Window.hpp(34,16): error C3646: 'm_eventManager': especificador de substituição desconhecido
+  (compilando o arquivo fonte 'State_Intro.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\Window.hpp(34,3): error C4430: faltando especificador de tipo - int assumido. Observação: C++ não suporta default-int
+  (compilando o arquivo fonte 'State_Intro.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\BaseState.hpp(5,7): error C2011: 'BaseState': redefinição do tipo 'class'
+  (compilando o arquivo fonte 'State_Intro.cpp')
+      C:\Users\vinicius.seus\source\repos\Worm\Worm\BaseState.hpp(5,7):
+      consulte a declaração de 'BaseState'
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(28,14): error C2143: erro de sintaxe: ';' ausente antes de '*'
+  (compilando o arquivo fonte 'State_Intro.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(28,2): error C4430: faltando especificador de tipo - int assumido. Observação: C++ não suporta default-int
+  (compilando o arquivo fonte 'State_Intro.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(28,30): error C2238: token(s) inesperado(s) precedendo ';'
+  (compilando o arquivo fonte 'State_Intro.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(26,36): error C2614: 'SharedContext': inicialização de membro inválida: 'm_eventManager' não é uma base ou membro
+  (compilando o arquivo fonte 'State_Intro.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\State_Intro.hpp(5,28): error C2504: 'BaseState': classe base indefinida
+  (compilando o arquivo fonte 'State_Intro.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\State_Intro.hpp(11,7): error C2535: 'void State_Intro::OnDestroy(void)': função membro já definida ou declarada
+  (compilando o arquivo fonte 'State_Intro.cpp')
+      C:\Users\vinicius.seus\source\repos\Worm\Worm\State_Intro.hpp(10,7):
+      consulte a declaração de 'State_Intro::OnDestroy'
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\State_Intro.cpp(6,3): error C2065: 'm_stateMgr': identificador não declarado
+C:\Users\vinicius.seus\source\repos\Worm\Worm\State_Intro.cpp(7,3): error C2065: 'm_stateMgr': identificador não declarado
+C:\Users\vinicius.seus\source\repos\Worm\Worm\State_Intro.cpp(13,28): error C2065: 'm_stateMgr': identificador não declarado
+C:\Users\vinicius.seus\source\repos\Worm\Worm\State_Intro.cpp(21,2): error C2065: 'm_font': identificador não declarado
+C:\Users\vinicius.seus\source\repos\Worm\Worm\State_Intro.cpp(22,17): error C2065: 'm_font': identificador não declarado
+C:\Users\vinicius.seus\source\repos\Worm\Worm\State_Intro.cpp(29,24): error C2065: 'm_stateMgr': identificador não declarado
+C:\Users\vinicius.seus\source\repos\Worm\Worm\State_Intro.cpp(36,24): error C2065: 'm_stateMgr': identificador não declarado
+C:\Users\vinicius.seus\source\repos\Worm\Worm\State_Intro.cpp(50,29): error C2065: 'm_stateMgr': identificador não declarado
+  StateManager.cpp
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(27,8): error C2143: erro de sintaxe: ';' ausente antes de '*'
+  (compilando o arquivo fonte 'StateManager.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(27,2): error C4430: faltando especificador de tipo - int assumido. Observação: C++ não suporta default-int
+  (compilando o arquivo fonte 'StateManager.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(27,16): error C2238: token(s) inesperado(s) precedendo ';'
+  (compilando o arquivo fonte 'StateManager.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(28,14): error C2143: erro de sintaxe: ';' ausente antes de '*'
+  (compilando o arquivo fonte 'StateManager.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(28,2): error C4430: faltando especificador de tipo - int assumido. Observação: C++ não suporta default-int
+  (compilando o arquivo fonte 'StateManager.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(28,30): error C2238: token(s) inesperado(s) precedendo ';'
+  (compilando o arquivo fonte 'StateManager.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(26,19): error C2614: 'SharedContext': inicialização de membro inválida: 'm_wind' não é uma base ou membro
+  (compilando o arquivo fonte 'StateManager.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(26,36): error C2614: 'SharedContext': inicialização de membro inválida: 'm_eventManager' não é uma base ou membro
+  (compilando o arquivo fonte 'StateManager.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\BaseState.hpp(5,7): error C2011: 'BaseState': redefinição do tipo 'class'
+  (compilando o arquivo fonte 'StateManager.cpp')
+      C:\Users\vinicius.seus\source\repos\Worm\Worm\BaseState.hpp(5,7):
+      consulte a declaração de 'BaseState'
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.cpp(11,16): error C2065: 'State_Intro': identificador não declarado
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.cpp(11,2): error C2672: 'StateManager::RegisterState': nenhuma função sobrecarregada correspondente encontrada
+      C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(47,7):
+      poderia ser 'void StateManager::RegisterState(const StateType &)'
+          C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.cpp(11,16):
+          'StateManager::RegisterState': argumento de modelo inválido para 'T', tipo esperado
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.cpp(12,16): error C2065: 'State_MainMenu': identificador não declarado
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.cpp(12,2): error C2672: 'StateManager::RegisterState': nenhuma função sobrecarregada correspondente encontrada
+      C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(47,7):
+      poderia ser 'void StateManager::RegisterState(const StateType &)'
+          C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.cpp(12,16):
+          'StateManager::RegisterState': argumento de modelo inválido para 'T', tipo esperado
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.cpp(13,16): error C2065: 'State_Game': identificador não declarado
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.cpp(13,2): error C2672: 'StateManager::RegisterState': nenhuma função sobrecarregada correspondente encontrada
+      C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(47,7):
+      poderia ser 'void StateManager::RegisterState(const StateType &)'
+          C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.cpp(13,16):
+          'StateManager::RegisterState': argumento de modelo inválido para 'T', tipo esperado
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.cpp(14,16): error C2065: 'State_Paused': identificador não declarado
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.cpp(14,2): error C2672: 'StateManager::RegisterState': nenhuma função sobrecarregada correspondente encontrada
+      C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(47,7):
+      poderia ser 'void StateManager::RegisterState(const StateType &)'
+          C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.cpp(14,16):
+          'StateManager::RegisterState': argumento de modelo inválido para 'T', tipo esperado
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.cpp(19,6): error C2027: uso de tipo indefinido 'BaseState'
+      C:\Users\vinicius.seus\source\repos\Worm\Worm\BaseState.hpp(5,7):
+      consulte a declaração de 'BaseState'
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.cpp(20,3): warning C4150: exclusão de ponteiro para tipo incompleto 'BaseState'; nenhum destruidor chamado
+      C:\Users\vinicius.seus\source\repos\Worm\Worm\BaseState.hpp(5,7):
+      consulte a declaração de 'BaseState'
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.cpp(26,21): error C2027: uso de tipo indefinido 'BaseState'
+      C:\Users\vinicius.seus\source\repos\Worm\Worm\BaseState.hpp(5,7):
+      consulte a declaração de 'BaseState'
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.cpp(32,13): error C2027: uso de tipo indefinido 'BaseState'
+      C:\Users\vinicius.seus\source\repos\Worm\Worm\BaseState.hpp(5,7):
+      consulte a declaração de 'BaseState'
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.cpp(39,7): error C2027: uso de tipo indefinido 'BaseState'
+      C:\Users\vinicius.seus\source\repos\Worm\Worm\BaseState.hpp(5,7):
+      consulte a declaração de 'BaseState'
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.cpp(43,18): error C2027: uso de tipo indefinido 'BaseState'
+      C:\Users\vinicius.seus\source\repos\Worm\Worm\BaseState.hpp(5,7):
+      consulte a declaração de 'BaseState'
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.cpp(49,21): error C2027: uso de tipo indefinido 'BaseState'
+      C:\Users\vinicius.seus\source\repos\Worm\Worm\BaseState.hpp(5,7):
+      consulte a declaração de 'BaseState'
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.cpp(55,13): error C2027: uso de tipo indefinido 'BaseState'
+      C:\Users\vinicius.seus\source\repos\Worm\Worm\BaseState.hpp(5,7):
+      consulte a declaração de 'BaseState'
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.cpp(62,7): error C2027: uso de tipo indefinido 'BaseState'
+      C:\Users\vinicius.seus\source\repos\Worm\Worm\BaseState.hpp(5,7):
+      consulte a declaração de 'BaseState'
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.cpp(66,18): error C2027: uso de tipo indefinido 'BaseState'
+      C:\Users\vinicius.seus\source\repos\Worm\Worm\BaseState.hpp(5,7):
+      consulte a declaração de 'BaseState'
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.cpp(95,12): error C2039: ' m_eventManager': não é um membro de 'SharedContext'
+      C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(25,8):
+      consulte a declaração de 'SharedContext'
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.cpp(99,19): error C2027: uso de tipo indefinido 'BaseState'
+      C:\Users\vinicius.seus\source\repos\Worm\Worm\BaseState.hpp(5,7):
+      consulte a declaração de 'BaseState'
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.cpp(103,13): error C2672: 'std::vector<std::pair<StateType,BaseState *>,std::allocator<std::pair<StateType,BaseState *>>>::emplace_back': nenhuma função sobrecarregada correspondente encontrada
+      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.50.35717\include\vector(922,44):
+      poderia ser 'std::pair<StateType,BaseState *> &std::vector<std::pair<StateType,BaseState *>,std::allocator<std::pair<StateType,BaseState *>>>::emplace_back(_Valty ...)'
+          C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.cpp(103,13):
+          Falha ao especializar o modelo de função 'std::pair<StateType,BaseState *> &std::vector<std::pair<StateType,BaseState *>,std::allocator<std::pair<StateType,BaseState *>>>::emplace_back(_Valty ...)'
+              C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.cpp(103,13):
+              Com os seguintes argumentos de template:
+                  C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.cpp(103,13):
+                  '_Valty={StateType &, BaseState *&}'
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.cpp(104,4): error C2027: uso de tipo indefinido 'BaseState'
+      C:\Users\vinicius.seus\source\repos\Worm\Worm\BaseState.hpp(5,7):
+      consulte a declaração de 'BaseState'
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.cpp(109,42): error C2027: uso de tipo indefinido 'BaseState'
+      C:\Users\vinicius.seus\source\repos\Worm\Worm\BaseState.hpp(5,7):
+      consulte a declaração de 'BaseState'
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.cpp(111,17): error C2027: uso de tipo indefinido 'BaseState'
+      C:\Users\vinicius.seus\source\repos\Worm\Worm\BaseState.hpp(5,7):
+      consulte a declaração de 'BaseState'
+  
+  Window.cpp
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(27,8): error C2143: erro de sintaxe: ';' ausente antes de '*'
+  (compilando o arquivo fonte 'Window.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(27,2): error C4430: faltando especificador de tipo - int assumido. Observação: C++ não suporta default-int
+  (compilando o arquivo fonte 'Window.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(27,16): error C2238: token(s) inesperado(s) precedendo ';'
+  (compilando o arquivo fonte 'Window.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(28,14): error C2143: erro de sintaxe: ';' ausente antes de '*'
+  (compilando o arquivo fonte 'Window.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(28,2): error C4430: faltando especificador de tipo - int assumido. Observação: C++ não suporta default-int
+  (compilando o arquivo fonte 'Window.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(28,30): error C2238: token(s) inesperado(s) precedendo ';'
+  (compilando o arquivo fonte 'Window.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(26,19): error C2614: 'SharedContext': inicialização de membro inválida: 'm_wind' não é uma base ou membro
+  (compilando o arquivo fonte 'Window.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\StateManager.hpp(26,36): error C2614: 'SharedContext': inicialização de membro inválida: 'm_eventManager' não é uma base ou membro
+  (compilando o arquivo fonte 'Window.cpp')
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\Window.cpp(17,17): error C2672: 'EventManager::AddCallback': nenhuma função sobrecarregada correspondente encontrada
+      C:\Users\vinicius.seus\source\repos\Worm\Worm\EventManager.hpp(89,7):
+      poderia ser 'bool EventManager::AddCallback(StateType,const std::string &,void (__cdecl T::* )(EventDetails *),T *)'
+          C:\Users\vinicius.seus\source\repos\Worm\Worm\Window.cpp(17,17):
+          'bool EventManager::AddCallback(StateType,const std::string &,void (__cdecl T::* )(EventDetails *),T *)': espera argumentos 4 - 3 fornecido
+  
+C:\Users\vinicius.seus\source\repos\Worm\Worm\Window.cpp(19,17): error C2672: 'EventManager::AddCallback': nenhuma função sobrecarregada correspondente encontrada
+      C:\Users\vinicius.seus\source\repos\Worm\Worm\EventManager.hpp(89,7):
+      poderia ser 'bool EventManager::AddCallback(StateType,const std::string &,void (__cdecl T::* )(EventDetails *),T *)'
+          C:\Users\vinicius.seus\source\repos\Worm\Worm\Window.cpp(19,17):
+          'bool EventManager::AddCallback(StateType,const std::string &,void (__cdecl T::* )(EventDetails *),T *)': espera argumentos 4 - 3 fornecido
+  
+  Gerando Código...

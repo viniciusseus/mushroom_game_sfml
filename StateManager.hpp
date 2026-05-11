@@ -1,4 +1,12 @@
+#pragma once
+
 #include <SFML/Graphics.hpp>
+
+#include <vector>
+#include <unordered_map>
+#include <functional>
+#include <utility>
+
 #include "Window.hpp"
 #include "EventManager.hpp"
 #include "BaseState.hpp"

@@ -16,12 +16,10 @@ class Window {
 		bool IsFullscreen();
 		sf::Vector2u GetWindowSize();
 		void Draw(sf::Drawable& l_drawable);
-
 		bool IsFocused();
-		EventManager* GetEventManager();
 		void ToggleFullscreen(EventDetails* l_details);
 		void Close(EventDetails* l_details = nullptr);
-
+		EventManager* GetEventManager();
 		sf::RenderWindow* GetRenderWindow();
 
 	private:

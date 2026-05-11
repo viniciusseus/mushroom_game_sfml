@@ -18,6 +18,8 @@ class Game {
 		sf::RenderWindow GetRendererWindow();
 		Window* GetWindow();
 
+		void LateUpdate();
+
 	private:
 		void MoveMushroom();
 		void MoveSprite(EventDetails* l_details);
@@ -30,4 +32,6 @@ class Game {
 
 		sf::Clock m_clock;
 		sf::Time m_elapsed;
+		SharedContext m_context;
+		StateManager m_stateManager;
 };

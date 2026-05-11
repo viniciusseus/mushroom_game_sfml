@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -141,11 +141,16 @@
     <ClCompile Include="EventManager.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="State_Intro.cpp" />
+    <ClCompile Include="StateManager.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BaseState.hpp" />
     <ClInclude Include="EventManager.hpp" />
     <ClInclude Include="Game.hpp" />
+    <ClInclude Include="StateManager.hpp" />
+    <ClInclude Include="State_Intro.hpp" />
     <ClInclude Include="Window.hpp" />
   </ItemGroup>
   <ItemGroup>
