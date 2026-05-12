@@ -40,9 +40,6 @@ public:
 	SharedContext* GetContext();
 	bool HasState(const StateType& l_type);
 	void SwitchTo(const StateType& l_type);
-	void Remove(const StateType& l_type);
-private:
-	// Methods.
 	void CreateState(const StateType& l_type);
 	void RemoveState(const StateType& l_type);
 	template<class T>
@@ -52,6 +49,8 @@ private:
 				return new T(this);
 			};
 	}
+
+private:
 	// Members.
 	SharedContext* m_shared;
 	StateContainer m_states;

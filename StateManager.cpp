@@ -80,7 +80,15 @@ bool StateManager::HasState(const StateType& l_type) {
 	return false;
 }
 
-void StateManager::Remove(const StateType& l_type) {
+void StateManager::CreateState(const StateType& l_type) {
+	auto newState = m_stateFactory.find(l_type);
+	if (newState == m_stateFactory.end()) { return; }
+	BaseState* state = newState->second();
+	m_states.emplace_back(l_type, state);
+	state->OnCreate();
+}
+
+void StateManager::RemoveState(const StateType& l_type) {
 	m_toRemove.push_back(l_type);
 }
 

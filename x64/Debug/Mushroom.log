@@ -1,3 +1,16 @@
-﻿  State_Intro.cpp
-C:\Users\vinicius\source\repos\Mushroom\Mushroom\State_Intro.cpp(23,2): error C2065: 'm_font': identificador não declarado
-C:\Users\vinicius\source\repos\Mushroom\Mushroom\State_Intro.cpp(24,17): error C2065: 'm_font': identificador não declarado
+﻿  Game.cpp
+C:\Users\vinicius\source\repos\Mushroom\Mushroom\Game.cpp(66,45): warning C4244: 'argumento': conversão de 'T' para 'float', possível perda de dados
+C:\Users\vinicius\source\repos\Mushroom\Mushroom\Game.cpp(66,45): warning C4244:         with
+C:\Users\vinicius\source\repos\Mushroom\Mushroom\Game.cpp(66,45): warning C4244:         [
+C:\Users\vinicius\source\repos\Mushroom\Mushroom\Game.cpp(66,45): warning C4244:             T=int
+C:\Users\vinicius\source\repos\Mushroom\Mushroom\Game.cpp(66,45): warning C4244:         ]
+C:\Users\vinicius\source\repos\Mushroom\Mushroom\Game.cpp(66,33): warning C4244: 'argumento': conversão de 'T' para 'float', possível perda de dados
+C:\Users\vinicius\source\repos\Mushroom\Mushroom\Game.cpp(66,33): warning C4244:         with
+C:\Users\vinicius\source\repos\Mushroom\Mushroom\Game.cpp(66,33): warning C4244:         [
+C:\Users\vinicius\source\repos\Mushroom\Mushroom\Game.cpp(66,33): warning C4244:             T=int
+C:\Users\vinicius\source\repos\Mushroom\Mushroom\Game.cpp(66,33): warning C4244:         ]
+  StateManager.cpp
+  State_Intro.cpp
+  main.cpp
+  Gerando Código...
+  Mushroom.vcxproj -> C:\Users\vinicius\source\repos\Mushroom\x64\Debug\Mushroom.exe
