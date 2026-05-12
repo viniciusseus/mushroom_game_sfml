@@ -1,18 +1,31 @@
-﻿C:\Program Files\Microsoft Visual Studio\18\Community\MSBuild\Microsoft\VC\v180\Microsoft.CppBuild.targets(551,5): warning MSB8028: O diretório intermediário (x64\Debug\) contém arquivos compartilhados de outro projeto (Worm.vcxproj). Isso pode levar a um comportamento incorreto de limpeza e recompilação.
-  EventManager.cpp
-C:\Users\vinicius\source\repos\Mushroom\Mushroom\EventManager.cpp(152,12): warning C4267: 'inicializando': conversão de 'size_t' para 'int', possível perda de dados
+﻿  EventManager.cpp
+C:\Users\vinicius\source\repos\Mushroom\Mushroom\Window.hpp(36,16): error C2079: 'Window::m_eventManager' usa class 'EventManager' indefinido
+  (compilando o arquivo fonte 'EventManager.cpp')
+  
+C:\Users\vinicius\source\repos\Mushroom\Mushroom\EventManager.cpp(166,12): warning C4267: 'inicializando': conversão de 'size_t' para 'int', possível perda de dados
   Game.cpp
-C:\Users\vinicius\source\repos\Mushroom\Mushroom\Game.cpp(53,45): warning C4244: 'argumento': conversão de 'T' para 'float', possível perda de dados
-C:\Users\vinicius\source\repos\Mushroom\Mushroom\Game.cpp(53,45): warning C4244:         with
-C:\Users\vinicius\source\repos\Mushroom\Mushroom\Game.cpp(53,45): warning C4244:         [
-C:\Users\vinicius\source\repos\Mushroom\Mushroom\Game.cpp(53,45): warning C4244:             T=int
-C:\Users\vinicius\source\repos\Mushroom\Mushroom\Game.cpp(53,45): warning C4244:         ]
-C:\Users\vinicius\source\repos\Mushroom\Mushroom\Game.cpp(53,33): warning C4244: 'argumento': conversão de 'T' para 'float', possível perda de dados
-C:\Users\vinicius\source\repos\Mushroom\Mushroom\Game.cpp(53,33): warning C4244:         with
-C:\Users\vinicius\source\repos\Mushroom\Mushroom\Game.cpp(53,33): warning C4244:         [
-C:\Users\vinicius\source\repos\Mushroom\Mushroom\Game.cpp(53,33): warning C4244:             T=int
-C:\Users\vinicius\source\repos\Mushroom\Mushroom\Game.cpp(53,33): warning C4244:         ]
+C:\Users\vinicius\source\repos\Mushroom\Mushroom\Game.cpp(66,45): warning C4244: 'argumento': conversão de 'T' para 'float', possível perda de dados
+C:\Users\vinicius\source\repos\Mushroom\Mushroom\Game.cpp(66,45): warning C4244:         with
+C:\Users\vinicius\source\repos\Mushroom\Mushroom\Game.cpp(66,45): warning C4244:         [
+C:\Users\vinicius\source\repos\Mushroom\Mushroom\Game.cpp(66,45): warning C4244:             T=int
+C:\Users\vinicius\source\repos\Mushroom\Mushroom\Game.cpp(66,45): warning C4244:         ]
+C:\Users\vinicius\source\repos\Mushroom\Mushroom\Game.cpp(66,33): warning C4244: 'argumento': conversão de 'T' para 'float', possível perda de dados
+C:\Users\vinicius\source\repos\Mushroom\Mushroom\Game.cpp(66,33): warning C4244:         with
+C:\Users\vinicius\source\repos\Mushroom\Mushroom\Game.cpp(66,33): warning C4244:         [
+C:\Users\vinicius\source\repos\Mushroom\Mushroom\Game.cpp(66,33): warning C4244:             T=int
+C:\Users\vinicius\source\repos\Mushroom\Mushroom\Game.cpp(66,33): warning C4244:         ]
   main.cpp
+  StateManager.cpp
+  State_Intro.cpp
+C:\Users\vinicius\source\repos\Mushroom\Mushroom\Window.hpp(36,16): error C2079: 'Window::m_eventManager' usa class 'EventManager' indefinido
+  (compilando o arquivo fonte 'State_Intro.cpp')
+  
+C:\Users\vinicius\source\repos\Mushroom\Mushroom\State_Intro.hpp(11,7): error C2535: 'void State_Intro::OnDestroy(void)': função membro já definida ou declarada
+  (compilando o arquivo fonte 'State_Intro.cpp')
+      C:\Users\vinicius\source\repos\Mushroom\Mushroom\State_Intro.hpp(10,7):
+      consulte a declaração de 'State_Intro::OnDestroy'
+  
+C:\Users\vinicius\source\repos\Mushroom\Mushroom\State_Intro.cpp(21,2): error C2065: 'm_font': identificador não declarado
+C:\Users\vinicius\source\repos\Mushroom\Mushroom\State_Intro.cpp(22,17): error C2065: 'm_font': identificador não declarado
   Window.cpp
   Gerando Código...
-  Mushroom.vcxproj -> C:\Users\vinicius\source\repos\Mushroom\x64\Debug\Mushroom.exe

@@ -3,6 +3,9 @@
 #include <string>
 #include "EventManager.hpp"
 
+class EventManager;
+struct EventDetails;
+
 class Window {
 	public:
 		Window();
@@ -30,7 +33,6 @@ class Window {
 		std::string m_windowTitle;
 		bool m_isDone;
 		bool m_isFullscreen;
-
 		EventManager m_eventManager;
 		bool m_isFocused;
 };

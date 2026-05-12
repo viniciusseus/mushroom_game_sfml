@@ -182,3 +182,8 @@ void EventManager::LoadBindings() {
 	}
 	bindings.close();
 }
+
+void EventManager::SetCurrentState(const StateType& l_state)
+{
+	m_currentState = l_state;
+}

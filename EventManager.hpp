@@ -112,6 +112,8 @@ public:
 			: sf::Mouse::getPosition());
 	}
 
+	void SetCurrentState(const StateType& l_state);
+
 private:
 	void LoadBindings();
 	Bindings m_bindings;
