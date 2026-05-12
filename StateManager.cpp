@@ -1,5 +1,5 @@
 #include <SFML/Graphics.hpp>
-#include "Window.hpp"
+//#include "Window.hpp"
 #include "EventManager.hpp"
 #include "BaseState.hpp"
 #include "StateManager.hpp"

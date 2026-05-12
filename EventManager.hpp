@@ -2,7 +2,8 @@
 #include <SFML/Graphics.hpp>
 #include <unordered_map>
 #include <functional>
-#include "StateManager.hpp"
+
+class StateManager;
 
 enum class EventType {
 	KeyDown = sf::Event::KeyPressed,

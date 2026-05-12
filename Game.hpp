@@ -1,8 +1,9 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include "Window.hpp"
-#include "Game.hpp"
 #include <iostream>
+#include "StateManager.hpp"
+#include "EventManager.hpp"
 
 class Game {
 	public:
@@ -32,6 +33,6 @@ class Game {
 
 		sf::Clock m_clock;
 		sf::Time m_elapsed;
-		SharedContext m_context;
 		StateManager m_stateManager;
+		SharedContext m_context;
 };

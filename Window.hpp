@@ -31,8 +31,8 @@ class Window {
 		sf::RenderWindow m_window;
 		sf::Vector2u m_windowSize;
 		std::string m_windowTitle;
+		EventManager m_eventManager;
 		bool m_isDone;
 		bool m_isFullscreen;
-		EventManager m_eventManager;
 		bool m_isFocused;
 };
