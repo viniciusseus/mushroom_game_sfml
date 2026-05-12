@@ -1,5 +1,7 @@
 #include <SFML/Graphics.hpp>
 #include "State_Intro.hpp"
+#include "StateManager.hpp"
+
 
 void State_Intro::Continue(EventDetails* l_details) {
 	if (m_timePassed >= 5.0f) {

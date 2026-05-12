@@ -8,7 +8,6 @@ public:
 	void Continue(EventDetails* l_details);
 	void OnCreate();
 	void OnDestroy();
-	void OnDestroy();
 	void Activate();
 	void Deactivate();
 	void Update(const sf::Time& l_time);
