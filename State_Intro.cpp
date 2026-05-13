@@ -2,6 +2,10 @@
 #include "State_Intro.hpp"
 #include "StateManager.hpp"
 
+State_Intro::State_Intro(StateManager* l_stateManager)
+	: BaseState(l_stateManager)
+{
+}
 
 void State_Intro::Continue(EventDetails* l_details) {
 	if (m_timePassed >= 5.0f) {

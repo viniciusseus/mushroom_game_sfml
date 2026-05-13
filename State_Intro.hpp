@@ -5,6 +5,7 @@
 class State_Intro : public BaseState {
 
 public:
+	State_Intro(StateManager* l_stateManager);
 	void Continue(EventDetails* l_details);
 	void OnCreate();
 	void OnDestroy();
