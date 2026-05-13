@@ -89,7 +89,16 @@ void StateManager::CreateState(const StateType& l_type) {
 }
 
 void StateManager::RemoveState(const StateType& l_type) {
-	m_toRemove.push_back(l_type);
+	for (auto itr = m_states.begin();
+		itr != m_states.end(); ++itr)
+	{
+		if (itr->first == l_type) {
+			itr->second->OnDestroy();
+			delete itr->second;
+			m_states.erase(itr);
+			return;
+		}
+	}
 }
 
 void StateManager::ProcessRequests() {
