@@ -27,11 +27,11 @@ void State_Intro::OnCreate() {
 	m_font.loadFromFile("arial.ttf");
 	m_text.setFont(m_font);
 	m_text.setString({ "Press SPACE to continue" });
-	m_text.setCharacterSize(15);
+	m_text.setCharacterSize(30);
 	sf::FloatRect textRect = m_text.getLocalBounds();
 	m_text.setOrigin(textRect.left + textRect.width / 2.0f,
 		textRect.top + textRect.height / 2.0f);
-	m_text.setPosition(windowSize.x / 2.0f, windowSize.y / 2.0f);
+	m_text.setPosition(windowSize.x / 2.0f, windowSize.y / 1.5f);
 	EventManager* evMgr = m_stateMgr->
 		GetContext()->m_eventManager;
 	evMgr->AddCallback(StateType::Intro, "Intro_Continue",
