@@ -48,7 +48,6 @@ void Game::MoveMushroom() {
 		m_mushroom.getPosition().y + (m_increment.y * fElapsed));
 }
 
-
 void Game::Render() {
 	m_window.BeginDraw(); // Clear.
 	m_stateManager.Draw();
