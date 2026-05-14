@@ -41,6 +41,7 @@ public:
 	bool HasState(const StateType& l_type);
 	void SwitchTo(const StateType& l_type);
 	void CreateState(const StateType& l_type);
+	void Remove(const StateType& l_type);
 	void RemoveState(const StateType& l_type);
 	template<class T>
 	void RegisterState(const StateType& l_type) {

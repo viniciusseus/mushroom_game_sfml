@@ -89,6 +89,10 @@ void StateManager::CreateState(const StateType& l_type) {
 	state->OnCreate();
 }
 
+void StateManager::Remove(const StateType& l_type) {
+	m_toRemove.push_back(l_type);
+}
+
 void StateManager::RemoveState(const StateType& l_type) {
 	for (auto itr = m_states.begin();
 		itr != m_states.end(); ++itr)

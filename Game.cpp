@@ -21,7 +21,7 @@ Game::~Game() {}
 void Game::Update() {
 	m_window.Update(); // Update window events.
 	m_stateManager.Update(m_elapsed);
-	MoveMushroom();
+	//MoveMushroom();
 }
 
 void Game::LateUpdate() {
