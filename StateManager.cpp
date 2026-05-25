@@ -4,13 +4,14 @@
 #include "BaseState.hpp"
 #include "StateManager.hpp"
 #include "State_Intro.hpp"
+#include "State_MainMenu.hpp"
 
 	
 StateManager::StateManager(SharedContext* l_shared)
 	: m_shared(l_shared)
 {
 	RegisterState<State_Intro>(StateType::Intro);
-	//RegisterState<State_MainMenu>(StateType::MainMenu);
+	RegisterState<State_MainMenu>(StateType::MainMenu);
 	//RegisterState<State_Game>(StateType::Game);
 	//RegisterState<State_Paused>(StateType::Paused);
 }
