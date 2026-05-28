@@ -4,6 +4,7 @@
 
 class State_Game : public BaseState {
 public:
+	State_Game(StateManager* l_stateManager);
 	void OnCreate();
 	void OnDestroy();
 	void Activate();

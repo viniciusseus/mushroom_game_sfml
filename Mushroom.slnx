@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Mushroom.vcxproj" Id="a4b36a3e-4f33-4967-b1f6-dc5c9724a3e8" />
+</Solution>

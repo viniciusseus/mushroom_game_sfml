@@ -1,6 +1,13 @@
 #include "State_Game.hpp"
 #include "StateManager.hpp"
 
+State_Game::State_Game(
+	StateManager* l_stateManager
+)
+	: BaseState(l_stateManager)
+{
+}
+
 void State_Game::OnCreate() {
 	m_texture.loadFromFile("Mushroom.png");
 	m_sprite.setTexture(m_texture);
@@ -55,3 +62,6 @@ void State_Game::MainMenu(EventDetails* l_details) {
 void State_Game::Pause(EventDetails* l_details) {
 	m_stateMgr->SwitchTo(StateType::Paused);
 }
+
+void State_Game::Activate() {}
+void State_Game::Deactivate(){}
