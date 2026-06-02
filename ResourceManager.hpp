@@ -62,6 +62,27 @@ public:
 		return true;
 	}
 
+	void LoadPaths(const std::string& l_pathFile) {
+		std::ifstream paths;
+		paths.open(Utils::GetWorkingDirectory() + l_pathFile);
+		if (paths.is_open()) {
+			std::string line;
+			while (std::getline(paths, line)) {
+				std::stringstream keystream(line);
+				std::string pathName;
+				std::string path;
+				keystream >> pathName;
+				keystream >> path;
+				m_paths.emplace(pathName, path);
+			}
+			paths.close();
+			return;
+		}
+		std::cerr <<
+			"! Failed loading the path file: "
+			<< l_pathFile << std::endl;
+	}
+
 	
 private:
 	std::unordered_map<std::string, std::pair<T*, unsigned int>> m_resources;
