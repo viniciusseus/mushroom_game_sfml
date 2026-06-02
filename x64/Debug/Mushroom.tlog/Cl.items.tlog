@@ -2,5 +2,8 @@ C:\Users\vinicius\source\repos\Mushroom\Mushroom\EventManager.cpp;C:\Users\vinic
 C:\Users\vinicius\source\repos\Mushroom\Mushroom\Game.cpp;C:\Users\vinicius\source\repos\Mushroom\Mushroom\x64\Debug\Game.obj
 C:\Users\vinicius\source\repos\Mushroom\Mushroom\main.cpp;C:\Users\vinicius\source\repos\Mushroom\Mushroom\x64\Debug\main.obj
 C:\Users\vinicius\source\repos\Mushroom\Mushroom\StateManager.cpp;C:\Users\vinicius\source\repos\Mushroom\Mushroom\x64\Debug\StateManager.obj
+C:\Users\vinicius\source\repos\Mushroom\Mushroom\State_Game.cpp;C:\Users\vinicius\source\repos\Mushroom\Mushroom\x64\Debug\State_Game.obj
 C:\Users\vinicius\source\repos\Mushroom\Mushroom\State_Intro.cpp;C:\Users\vinicius\source\repos\Mushroom\Mushroom\x64\Debug\State_Intro.obj
+C:\Users\vinicius\source\repos\Mushroom\Mushroom\State_MainMenu.cpp;C:\Users\vinicius\source\repos\Mushroom\Mushroom\x64\Debug\State_MainMenu.obj
+C:\Users\vinicius\source\repos\Mushroom\Mushroom\State_Paused.cpp;C:\Users\vinicius\source\repos\Mushroom\Mushroom\x64\Debug\State_Paused.obj
 C:\Users\vinicius\source\repos\Mushroom\Mushroom\Window.cpp;C:\Users\vinicius\source\repos\Mushroom\Mushroom\x64\Debug\Window.obj

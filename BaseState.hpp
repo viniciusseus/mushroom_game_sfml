@@ -11,6 +11,7 @@ class BaseState {
 			m_transcendent(false) {
 		}
 		virtual ~BaseState() {}
+		sf::View& GetView() { return m_view; }
 		virtual void OnCreate() = 0;
 		virtual void OnDestroy() = 0;
 		virtual void Activate() = 0;
@@ -30,4 +31,5 @@ class BaseState {
 		StateManager* m_stateMgr;
 		bool m_transparent;
 		bool m_transcendent;
+		sf::View m_view;
 };

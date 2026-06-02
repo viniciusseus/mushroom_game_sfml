@@ -24,6 +24,7 @@ class Window {
 		void Close(EventDetails* l_details = nullptr);
 		EventManager* GetEventManager();
 		sf::RenderWindow* GetRenderWindow();
+		sf::FloatRect GetViewSpace();
 
 	private:
 		void Destroy();

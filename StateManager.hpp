@@ -50,6 +50,7 @@ public:
 				return new T(this);
 			};
 	}
+	
 
 private:
 	// Members.

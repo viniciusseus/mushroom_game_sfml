@@ -1,14 +1,17 @@
 #include <SFML/Graphics.hpp>
 #include "State_Intro.hpp"
 #include "StateManager.hpp"
+#include <iostream>
 
 State_Intro::State_Intro(StateManager* l_stateManager)
-	: BaseState(l_stateManager) {}
+	: BaseState(l_stateManager), m_timePassed(0.0f) {}
 
 void State_Intro::Continue(EventDetails* l_details) {
 	if (m_timePassed >= 5.0f) {
+		std::cout << "Trocando para MainMenu"
+			<< std::endl;
 		m_stateMgr->SwitchTo(StateType::MainMenu);
-		m_stateMgr->RemoveState(StateType::Intro);
+		m_stateMgr->Remove(StateType::Intro);
 	}
 }
 
@@ -47,6 +50,7 @@ void State_Intro::Update(const sf::Time& l_time) {
 		m_timePassed += l_time.asSeconds();
 		m_introSprite.setPosition(m_introSprite.getPosition().x,
 			m_introSprite.getPosition().y + (48 * l_time.asSeconds()));
+		std::cout << m_timePassed << std::endl;
 	}
 }
 

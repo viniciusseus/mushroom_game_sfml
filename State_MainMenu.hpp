@@ -4,6 +4,7 @@
 
 class State_MainMenu : public BaseState {
 	public:
+		State_MainMenu(StateManager* l_stateManager);
 		void MouseClick(EventDetails* l_details);
 		void Continue(EventDetails* l_details);
 		void OnCreate();

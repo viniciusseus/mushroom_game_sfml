@@ -2,6 +2,9 @@
 #include "State_MainMenu.hpp"
 #include "StateManager.hpp"
 
+State_MainMenu::State_MainMenu(StateManager* l_stateManager)
+	: BaseState(l_stateManager){}
+
 void State_MainMenu::OnCreate() {
 	m_font.loadFromFile("arial.ttf");
 	m_text.setFont(m_font);
@@ -81,6 +84,8 @@ void State_MainMenu::MouseClick(EventDetails* l_details) {
 	}
 }
 
+void State_MainMenu::Update(const sf::Time& l_time) {}
+
 void State_MainMenu::Draw() {
 	sf::RenderWindow* window = m_stateMgr->GetContext()->
 		m_wind->GetRenderWindow();
@@ -90,3 +95,5 @@ void State_MainMenu::Draw() {
 		window->draw(m_labels[i]);
 	}
 } 
+
+void State_MainMenu::Deactivate() {}
