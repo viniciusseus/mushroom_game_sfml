@@ -33,6 +33,15 @@
     <ClCompile Include="State_Intro.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
+    <ClCompile Include="State_MainMenu.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="State_Game.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="State_Paused.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="EventManager.hpp">
@@ -51,6 +60,15 @@
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
     <ClInclude Include="State_Intro.hpp">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="State_MainMenu.hpp">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="State_Game.hpp">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="State_Paused.hpp">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
   </ItemGroup>
