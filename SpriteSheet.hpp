@@ -1,6 +1,7 @@
 #include <SFML/Graphics.hpp>
 #include <unordered_map>
 #include "TextureManager.hpp"
+#include "Anim_Base.hpp"
 
 using Animations = std::unordered_map<std::string, Anim_Base*>;
 
@@ -18,6 +19,10 @@ public:
 	const bool& l_loop = false);
 	void Update(const float& l_dT);
 	void Draw(sf::RenderWindow* l_wnd);
+
+	void SetSpriteSize(const sf::Vector2i& l_size);
+	void SetSpritePosition(const sf::Vector2f& l_pos);
+	void SetDirection(const Direction& l_dir);
 
 private:
 	std::string m_texture;
