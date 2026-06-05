@@ -1,3 +1,5 @@
+#include <string>
+
 template<typename Derived, typename T>
 class ResourceManager {
 public:

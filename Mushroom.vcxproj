@@ -146,6 +146,7 @@
     <ClInclude Include="BaseState.hpp" />
     <ClInclude Include="EventManager.hpp" />
     <ClInclude Include="Game.hpp" />
+    <ClInclude Include="ResourceManager.hpp" />
     <ClInclude Include="StateManager.hpp" />
     <ClInclude Include="State_Game.hpp" />
     <ClInclude Include="State_Intro.hpp" />
@@ -156,6 +157,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="keys.cfg" />
+    <None Include="Textures.cfg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -22,8 +22,10 @@
     <ClInclude Include="State_Paused.hpp" />
     <ClInclude Include="Window.hpp" />
     <ClInclude Include="Utilities.hpp" />
+    <ClInclude Include="ResourceManager.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="keys.cfg" />
+    <None Include="Textures.cfg" />
   </ItemGroup>
 </Project>
