@@ -10,6 +10,8 @@
     <ClCompile Include="State_MainMenu.cpp" />
     <ClCompile Include="State_Paused.cpp" />
     <ClCompile Include="Window.cpp" />
+    <ClCompile Include="SpriteSheet.cpp" />
+    <ClCompile Include="Anim_Base.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseState.hpp" />
@@ -23,9 +25,14 @@
     <ClInclude Include="Window.hpp" />
     <ClInclude Include="Utilities.hpp" />
     <ClInclude Include="ResourceManager.hpp" />
+    <ClInclude Include="TextureManager.hpp" />
+    <ClInclude Include="SpriteSheet.hpp" />
+    <ClInclude Include="Direction.hpp" />
+    <ClInclude Include="Anim_Base.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="keys.cfg" />
-    <None Include="Textures.cfg" />
+    <None Include="textures.cfg" />
+    <None Include="Player.sheet" />
   </ItemGroup>
 </Project>

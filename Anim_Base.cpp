@@ -46,3 +46,4 @@ void Anim_Base::Update(const float& l_dT) {
 	CropSprite();
 	m_elapsedTime = 0;
 }
+

@@ -4,7 +4,7 @@ using Frame = unsigned int;
 
 class Anim_Base {
 	friend class SpriteSheet;
-public:
+public: 
 	Anim_Base();
 	virtual ~Anim_Base();
 	// Setters/getters.

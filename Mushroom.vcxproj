@@ -132,9 +132,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Anim_Base.cpp" />
     <ClCompile Include="EventManager.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="SpriteSheet.cpp" />
     <ClCompile Include="StateManager.cpp" />
     <ClCompile Include="State_Game.cpp" />
     <ClCompile Include="State_Intro.cpp" />
@@ -143,21 +145,26 @@
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Anim_Base.hpp" />
     <ClInclude Include="BaseState.hpp" />
+    <ClInclude Include="Direction.hpp" />
     <ClInclude Include="EventManager.hpp" />
     <ClInclude Include="Game.hpp" />
     <ClInclude Include="ResourceManager.hpp" />
+    <ClInclude Include="SpriteSheet.hpp" />
     <ClInclude Include="StateManager.hpp" />
     <ClInclude Include="State_Game.hpp" />
     <ClInclude Include="State_Intro.hpp" />
     <ClInclude Include="State_MainMenu.hpp" />
     <ClInclude Include="State_Paused.hpp" />
+    <ClInclude Include="TextureManager.hpp" />
     <ClInclude Include="Utilities.hpp" />
     <ClInclude Include="Window.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="keys.cfg" />
-    <None Include="Textures.cfg" />
+    <None Include="Player.sheet" />
+    <None Include="textures.cfg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
