@@ -20,6 +20,11 @@ void Anim_Base::SetFrame(const unsigned int& l_frame) {
 	}
 }
 
+void Anim_Base::SetLooping(const bool& l_loop)
+{
+	m_loop = l_loop;
+}
+
 bool Anim_Base::IsInAction() {
 	if (m_frameActionStart == -1 || m_frameActionEnd == -1) {
 		return true;

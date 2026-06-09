@@ -1,6 +1,7 @@
 #include "SpriteSheet.hpp";
 #include "Direction.hpp";
 #include <string>
+#include <fstream>
 
 SpriteSheet::SpriteSheet(TextureManager* l_textMgr)
 	:m_textureManager(l_textMgr), m_animationCurrent(nullptr),

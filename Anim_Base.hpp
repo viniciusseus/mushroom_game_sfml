@@ -22,6 +22,7 @@ public:
 	void SetSpriteSheet(SpriteSheet* l_sheet);
 	void SetFrame(const unsigned int& l_frame);
 	bool IsInAction();
+	void SetLooping(const bool& l_loop);
 
 protected:
 	virtual void FrameStep() = 0;
