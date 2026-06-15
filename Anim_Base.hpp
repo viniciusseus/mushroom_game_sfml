@@ -23,6 +23,8 @@ public:
 	void SetFrame(const unsigned int& l_frame);
 	bool IsInAction();
 	void SetLooping(const bool& l_loop);
+	const std::string& GetName() const;
+	void SetName(const std::string& l_name);
 
 protected:
 	virtual void FrameStep() = 0;

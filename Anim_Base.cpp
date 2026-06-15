@@ -20,6 +20,21 @@ void Anim_Base::SetFrame(const unsigned int& l_frame) {
 	}
 }
 
+const std::string& Anim_Base::GetName() const
+{
+	return m_name;
+}
+
+void Anim_Base::SetName(const std::string& l_name)
+{
+	m_name = l_name;
+}
+
+const std::string& Anim_Base::GetName() const
+{
+	return m_name;
+}
+
 void Anim_Base::SetLooping(const bool& l_loop)
 {
 	m_loop = l_loop;

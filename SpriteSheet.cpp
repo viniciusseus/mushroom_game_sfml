@@ -1,5 +1,6 @@
 #include "SpriteSheet.hpp";
 #include "Direction.hpp";
+#include "Anim_Directional.hpp";
 #include <string>
 #include <fstream>
 #include <sstream>
