@@ -2,6 +2,7 @@
 #include <unordered_map>
 #include "TextureManager.hpp"
 #include "Anim_Base.hpp"
+#include "Direction.hpp";
 
 using Animations = std::unordered_map<std::string, Anim_Base*>;
 
@@ -23,6 +24,9 @@ public:
 	void SetSpriteSize(const sf::Vector2i& l_size);
 	void SetSpritePosition(const sf::Vector2f& l_pos);
 	void SetDirection(const Direction& l_dir);
+	
+	sf::Vector2i GetSpriteSize() const;
+	Direction GetDirection() const;
 
 private:
 	std::string m_texture;

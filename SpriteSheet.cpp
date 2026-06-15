@@ -25,6 +25,16 @@ void SpriteSheet::SetSpriteSize(const sf::Vector2i& l_size) {
 	m_sprite.setOrigin(m_spriteSize.x / 2, m_spriteSize.y);
 }
 
+sf::Vector2i SpriteSheet::GetSpriteSize() const
+{
+	return m_spriteSize;
+}
+
+Direction SpriteSheet::GetDirection() const
+{
+	return m_direction;
+}
+
 void SpriteSheet::SetSpritePosition(const sf::Vector2f& l_pos) {
 	m_sprite.setPosition(l_pos);
 }
