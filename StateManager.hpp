@@ -11,6 +11,7 @@
 #include "EventManager.hpp"
 #include "BaseState.hpp"
 #include "TextureManager.hpp"
+#include "Map.hpp"
 
 enum class StateType {
 	Intro = 1, MainMenu, Game, Paused, GameOver, Credits
@@ -30,6 +31,7 @@ struct SharedContext {
 	Window* m_wind;
 	EventManager* m_eventManager;
 	TextureManager* m_textureManager;
+
 	Map* m_gameMap;
 };
 
