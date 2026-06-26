@@ -105,3 +105,8 @@ void EntityBase::Update(float l_dT) {
 	CheckCollisions();
 	ResolveCollisions();
 }
+
+void EntityBase::UpdateAABB() {
+	m_AABB = sf::FloatRect(m_position.x - (m_size.x / 2),
+		m_position.y - m_size.y, m_size.x, m_size.y);
+}
