@@ -11,6 +11,17 @@ enum class EntityState {
 	Idle, Walking, Jumping, Attacking, Hurt, Dying
 };
 
+struct CollisionElement {
+	CollisionElement(float l_area, TileInfo* l_info,
+		const sf::FloatRect& l_bounds) :m_area(l_area),
+		m_tile(l_info), m_tileBounds(l_bounds) {
+	}
+	float m_area;
+	TileInfo* m_tile;
+	sf::FloatRect m_tileBounds;
+};
+using Collisions = std::vector<CollisionElement>;
+
 class EntityManager;
 class EntityBase {
 	friend class EntityManager;
@@ -25,6 +36,8 @@ class EntityBase {
 		void ApplyFriction(float l_x, float l_y);
 		virtual void Update(float l_dT);
 		virtual void Draw(sf::RenderWindow* l_wind) = 0;
+		bool SortCollisions(const CollisionElement& l_1,
+			const CollisionElement& l_2);
 	protected:
 		// Methods.
 		void UpdateAABB();
