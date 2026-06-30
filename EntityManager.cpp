@@ -88,3 +88,35 @@ void EntityManager::ProcessRemovals() {
 		m_entitiesToRemove.pop_back();
 	}
 }
+
+void EntityManager::EntityCollisionCheck() {
+	if (m_entities.empty()) { return; }
+	for (auto itr = m_entities.begin();
+		std::next(itr) != m_entities.end(); ++itr)
+	{
+		for (auto itr2 = std::next(itr);
+			itr2 != m_entities.end(); ++itr2)
+		{
+			if (itr->first == itr2->first) { continue; }
+			// Regular AABB bounding box collision.
+			if (itr->second->m_AABB.intersects(itr2->second->m_AABB)) {
+				itr->second->OnEntityCollision(itr2->second, false);
+				itr2->second->OnEntityCollision(itr->second, false);
+			}
+			EntityType t1 = itr->second->GetType();
+			EntityType t2 = itr2->second->GetType();
+			if (t1 == EntityType::Player || t1 == EntityType::Enemy) {
+				Character* c1 = (Character*)itr->second;
+				if (c1->m_attackAABB.intersects(itr2->second->m_AABB)) {
+					c1->OnEntityCollision(itr2->second, true);
+				}
+			}
+			if (t2 == EntityType::Player || t2 == EntityType::Enemy) {
+				Character* c2 = (Character*)itr2->second;
+				if (c2->m_attackAABB.intersects(itr->second->m_AABB)) {
+					c2->OnEntityCollision(itr->second, true);
+				}
+			}
+		}
+	}
+}
