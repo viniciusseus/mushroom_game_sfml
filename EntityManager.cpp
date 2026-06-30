@@ -30,3 +30,61 @@ int EntityManager::Add(const EntityType& l_type,
 	++m_idCounter;
 	return m_idCounter - 1;
 }
+
+EntityBase* EntityManager::Find(const std::string& l_name) {
+	for (auto& itr : m_entities) {
+		if (itr.second->GetName() == l_name) {
+			return itr.second;
+		}
+	}
+	return nullptr;
+}
+
+EntityBase* EntityManager::Find(unsigned int l_id) {
+	auto itr = m_entities.find(l_id);
+	if (itr == m_entities.end()) { return nullptr; }
+	return itr->second;
+}
+
+void EntityManager::Remove(unsigned int l_id) {
+	m_entitiesToRemove.emplace_back(l_id);
+}
+
+void EntityManager::Update(float l_dT) {
+	for (auto& itr : m_entities) {
+		itr.second->Update(l_dT);
+	}
+	EntityCollisionCheck();
+	ProcessRemovals();
+}
+
+void EntityManager::Draw() {
+	sf::RenderWindow* wnd = m_context->m_wind->GetRenderWindow();
+	sf::FloatRect viewSpace = m_context->m_wind->GetViewSpace();
+	for (auto& itr : m_entities) {
+		if (!viewSpace.intersects(itr.second->m_AABB)) { continue; }
+		itr.second->Draw(wnd);
+	}
+}
+
+void EntityManager::Purge() {
+	for (auto& itr : m_entities) {
+		delete itr.second;
+	}
+	m_entities.clear();
+	m_idCounter = 0;
+}
+
+void EntityManager::ProcessRemovals() {
+	while (m_entitiesToRemove.begin() != m_entitiesToRemove.end()) {
+		unsigned int id = m_entitiesToRemove.back();
+		auto itr = m_entities.find(id);
+		if (itr != m_entities.end()) {
+			std::cout << "Discarding entity: "
+				<< itr->second->GetId() << std::endl;
+			delete itr->second;
+			m_entities.erase(itr);
+		}
+		m_entitiesToRemove.pop_back();
+	}
+}
