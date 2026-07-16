@@ -120,3 +120,17 @@ void EntityManager::EntityCollisionCheck() {
 		}
 	}
 }
+
+void EntityManager::LoadEnemyTypes(const std::string& l_name) {
+	std::ifstream file;
+	// Opening the file.
+	while (std::getline(file, line)) {
+		if (line[0] == '|') { continue; }
+		std::stringstream keystream(line);
+		std::string name;
+		std::string charFile;
+		keystream >> name >> charFile;
+		m_enemyTypes.emplace(name, charFile);
+	}
+	file.close();
+}
