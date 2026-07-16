@@ -1,6 +1,7 @@
 #include "Map.hpp";
 #include "TileInfo.hpp"
 #include "Utilities.hpp"
+#include "EntityManager.hpp"
 #include <fstream>
 #include <sstream>
 #include <string>
@@ -35,7 +36,7 @@ Map::~Map() {
 
 Tile* Map::GetTile(unsigned int l_x, unsigned int l_y) {
 	auto itr = m_tileMap.find(ConvertCoords(l_x, l_y));
-	return(itr != m_tileMap.end() ? itr->second : nullptr);
+	return (itr != m_tileMap.end() ? itr->second : nullptr);
 }
 
 unsigned int Map::ConvertCoords(const unsigned int& l_x, const unsigned int& l_y)
@@ -237,7 +238,25 @@ void Map::LoadMap(const std::string& l_path)
 		else if (type == "NEXTMAP") {
 			keystream >> m_nextMap;
 		}
-		
+		else if (type == "PLAYER") {
+			if (playerId != -1) { continue; }
+			// Set up the player position here.
+			playerId = entityMgr->Add(EntityType::Player);
+			if (playerId < 0) { continue; }
+			float playerX = 0; float playerY = 0;
+			keystream >> playerX >> playerY;
+			entityMgr->Find(playerId)->SetPosition(playerX, playerY);
+			m_playerStart = sf::Vector2f(playerX, playerY);
+		}
+		else if (type == "ENEMY") {
+			std::string enemyName;
+			keystream >> enemyName;
+			int enemyId = entityMgr->Add(EntityType::Enemy, enemyName);
+			if (enemyId < 0) { continue; }
+			float enemyX = 0; float enemyY = 0;
+			keystream >> enemyX >> enemyY;
+			entityMgr->Find(enemyId)->SetPosition(enemyX, enemyY);
+		}
 	}
 
 	file.close();

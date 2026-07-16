@@ -134,12 +134,14 @@
   <ItemGroup>
     <ClCompile Include="Anim_Base.cpp" />
     <ClCompile Include="Anim_Directional.cpp" />
+    <ClCompile Include="Character.cpp" />
     <ClCompile Include="EntityBase.cpp" />
     <ClCompile Include="EntityManager.cpp" />
     <ClCompile Include="EventManager.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Map.cpp" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="SpriteSheet.cpp" />
     <ClCompile Include="StateManager.cpp" />
     <ClCompile Include="State_Game.cpp" />
@@ -152,11 +154,13 @@
     <ClInclude Include="Anim_Base.hpp" />
     <ClInclude Include="Anim_Directional.hpp" />
     <ClInclude Include="BaseState.hpp" />
+    <ClInclude Include="Character.hpp" />
     <ClInclude Include="Direction.hpp" />
     <ClInclude Include="EntityManager.hpp" />
     <ClInclude Include="EventManager.hpp" />
     <ClInclude Include="Game.hpp" />
     <ClInclude Include="Map.hpp" />
+    <ClInclude Include="Player.hpp" />
     <ClInclude Include="ResourceManager.hpp" />
     <ClInclude Include="SpriteSheet.hpp" />
     <ClInclude Include="StateManager.hpp" />
@@ -171,6 +175,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="keys.cfg" />
+    <None Include="Player.char" />
     <None Include="Player.sheet" />
     <None Include="textures.cfg" />
     <None Include="Tiles.cfg" />
