@@ -1,4 +1,5 @@
 #include "BaseState.hpp"
+#include "EntityBase.hpp"
 #include "EventManager.hpp"
 #include <functional>
 
@@ -17,4 +18,5 @@ private:
 	sf::Texture m_texture;
 	sf::Sprite m_sprite;
 	sf::Vector2f m_increment;
+	Map* m_gameMap;
 };

@@ -4,6 +4,7 @@
 #include <iostream>
 #include "StateManager.hpp"
 #include "EventManager.hpp"
+#include "EntityManager.hpp"
 
 class Game {
 	public:
@@ -35,4 +36,5 @@ class Game {
 		sf::Time m_elapsed;
 		StateManager m_stateManager;
 		SharedContext m_context;
+		EntityManager m_entityManager;
 };
