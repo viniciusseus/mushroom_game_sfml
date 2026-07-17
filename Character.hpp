@@ -1,6 +1,8 @@
 #include "EntityBase.hpp"
 #include "Direction.hpp"
 #include "SpriteSheet.hpp"
+#include "EntityManager.hpp"
+#include "EntityState.hpp"
 
 class Character : public EntityBase {
 	friend class EntityManager;
